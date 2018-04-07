@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    app:cardCornerRadius="40dp"
+    android:layout_margin="12dp"
+    android:orientation="vertical"
+    tools:context=".DayTemperatureActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="20dp"
+        android:layout_height="350dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+
+            android:transitionName="profile1"
+            android:src="@drawable/day"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="6dp"
+            android:gravity="center_horizontal"
+            android:layout_height="350dp">
+            <FrameLayout
+                android:layout_width="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="220dp">
+                <com.sdsmdg.harjot.crollerTest.Croller
+                    android:id="@+id/croller_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:back_circle_color="#30ffffff"
+                    app:indicator_color="#0B3C49"
+                    app:indicator_width="5"
+                    app:is_continuous="false"
+                    app:label="Day mode"
+                    app:label_color="#000000"
+                    app:label_size="42"
+                    app:main_circle_color="#80ffffff"
+                    app:max="50"
+                    app:progress_primary_color="#0B3C49"
+                    app:progress_secondary_color="#EEEEEE"
+                    app:start_offset="45" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="32sp"
+                    android:id="@+id/tv_day"
+                    android:textColor="#0B3C49"
+                    android:text="25°C"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+
+            <com.skyfishjy.library.RippleBackground
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:forceHasOverlappingRendering="true"
+                android:id="@+id/ripple"
+                app:rb_color="#60f83600"
+                android:gravity="center"
+                app:rb_radius="32dp"
+
+                app:rb_rippleAmount="3"
+                app:rb_duration="3000"
+                app:rb_scale="1.5">
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Base.Widget.AppCompat.Button"
+                    android:src="@drawable/ic_check_black_24dp"
+                    android:background="@drawable/btn"
+                    android:onClick="start"
+
+                    android:layout_weight="1"
+                    app:fabCustomSize="60dp"
+                    app:pressedTranslationZ="8dp"
+                    app:backgroundTint="#f83600"
+                    android:layout_margin="20dp"
+                    android:elevation="4dp"
+                    android:letterSpacing="0.2"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:id="@+id/edt_time_am"
+                    />
+            </com.skyfishjy.library.RippleBackground>
+
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

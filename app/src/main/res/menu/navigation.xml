@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_living_room"
+        android:icon="@drawable/ic_living_room"
+        android:title="Living Room" />
+
+    <item
+        android:id="@+id/navigation_bed_room"
+        android:icon="@drawable/ic_bed_room"
+        android:title="Bed room" />
+
+    <item
+        android:id="@+id/navigation_kitchen"
+        android:icon="@drawable/ic_kitchen"
+        android:title="Kitchen" />
+    <item
+        android:id="@+id/navigation_garage"
+        android:icon="@drawable/ic_garage"
+        android:title="Garage" />
+
+</menu>

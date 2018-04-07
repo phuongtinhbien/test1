@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@drawable/bg_am"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <FrameLayout
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fitsSystemWindows="true"
+        android:text="@string/title_home"
+        />
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemIconTint="@drawable/icon_nav"
+        app:itemTextColor="@drawable/icon_nav"
+        app:itemBackground="@android:color/white"
+        android:id="@+id/navigation"
+        app:layout_anchor="@id/message"
+        app:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/message"
+        android:layout_gravity="start|bottom"
+        app:menu="@menu/navigation">
+
+    </android.support.design.widget.BottomNavigationView>
+</android.support.v7.widget.LinearLayoutCompat>
+
+
+</android.support.design.widget.CoordinatorLayout>

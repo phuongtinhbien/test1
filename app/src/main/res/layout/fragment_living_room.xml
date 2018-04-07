@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="#90ffffff"
+    tools:context=".Room.LivingRoomFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <FrameLayout
+            android:layout_width="250dp"
+            android:layout_height="280dp"
+            android:layout_gravity="center_horizontal">
+
+            <com.sdsmdg.harjot.crollerTest.Croller
+                android:id="@+id/croller_living_room"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:back_circle_color="#EDEDED"
+                app:indicator_color="#0B3C49"
+                app:indicator_width="10"
+                app:is_continuous="true"
+                app:label_color="#000000"
+                app:label_size="42"
+                app:main_circle_color="#FFFFFF"
+                app:max="1000"
+                app:progress_primary_color="#0B3C49"
+                app:progress_secondary_color="#EEEEEE"
+                app:start_offset="45" />
+
+            <TextView
+                android:id="@+id/tv_temp_living_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:text="25°C"
+                android:textColor="#0B3C49"
+                android:textSize="42sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="4">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/power_living_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:forceHasOverlappingRendering="true"
+                android:padding="6dp"
+                android:src="@drawable/ic_power_settings_new_black_24dp"
+                android:tint="#0B3C49"
+                app:backgroundTint="@color/colorPrimary"
+                app:elevation="4dp"
+                app:fabSize="normal"
+                app:pressedTranslationZ="4dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/cool_living_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:padding="6dp"
+                android:src="@drawable/ic_cool"
+                android:tint="#0B3C49"
+                app:backgroundTint="@color/colorPrimary"
+                app:elevation="4dp"
+                app:fabSize="normal"
+                app:pressedTranslationZ="4dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/auto_living_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:padding="6dp"
+                android:src="@drawable/ic_autorenew_black_24dp"
+                android:tint="#0B3C49"
+                app:backgroundTint="@color/colorPrimary"
+                app:elevation="4dp"
+                app:fabSize="normal"
+                app:pressedTranslationZ="4dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/away_living_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:padding="6dp"
+                android:src="@drawable/ic_out_home"
+                android:tint="#0B3C49"
+                app:backgroundTint="@color/colorPrimary"
+                app:elevation="4dp"
+                app:fabSize="normal"
+                app:pressedTranslationZ="4dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="3.7"
+                android:text="Schedule"
+                android:textColor="#0B3C49"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <com.skyfishjy.library.RippleBackground
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:forceHasOverlappingRendering="true"
+                android:id="@+id/ripplelv"
+                app:rb_color="@android:color/transparent"
+                android:layout_gravity="end|center_vertical"
+                app:rb_radius="25dp"
+                app:rb_type="fillRipple"
+                app:rb_rippleAmount="3"
+                app:rb_duration="3000"
+                app:rb_scale="1.5">
+            <Button
+                android:id="@+id/start_living_room"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+
+                android:layout_margin="6dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/btn"
+                android:elevation="4dp"
+                android:letterSpacing="0.1"
+                android:text="apply"
+                android:textColor="@android:color/white"
+                android:textSize="13sp"
+                android:translationZ="4dp"
+                 />
+            </com.skyfishjy.library.RippleBackground>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="2">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/day_living_room"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?selectableItemBackground"
+
+                app:cardCornerRadius="25dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/day"
+                    android:transitionName="profile" />
+
+                <TextView
+                    android:id="@+id/tv_day_living_room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-light"
+                    android:text="25°C"
+                    android:textColor="#0B3C49"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/night_living_room"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?selectableItemBackground"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/night"
+                    android:transitionName="profile" />
+
+                <TextView
+                    android:id="@+id/tv_night_living_room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-light"
+                    android:text="25°C"
+                    android:textColor="#FFf"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
